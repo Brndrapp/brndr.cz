@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="We craft bold visual identities, websites and brand strategies for ambitious companies." />
+
+  <!-- Favicon (simple SVG letter mark) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23ff4d2e'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='800' font-size='18' fill='white'>b</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <title>brndr</title>
+</head>
+<body>
+
+  <!-- ── Navigation ───────────────────────────────────────── -->
+  <nav id="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#hero" class="nav-logo">brndr</a>
+      <ul class="nav-links"></ul>
+      <a href="#contact" class="nav-cta">Let's talk</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Hero ─────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content" data-reveal>
+        <span class="hero-eyebrow"></span>
+        <h1 class="hero-headline"></h1>
+        <p class="hero-subline"></p>
+        <a href="#work" class="hero-cta"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Work ─────────────────────────────────────────────── -->
+  <section id="work">
+    <div class="container">
+      <span class="section-label" data-reveal></span>
+      <h2 class="section-heading" data-reveal></h2>
+      <div class="work-grid" data-reveal></div>
+    </div>
+  </section>
+
+  <!-- ── Services ─────────────────────────────────────────── -->
+  <section id="services">
+    <div class="container">
+      <span class="section-label" data-reveal></span>
+      <h2 class="section-heading" data-reveal></h2>
+      <div class="services-list" data-reveal></div>
+    </div>
+  </section>
+
+  <!-- ── About ────────────────────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div data-reveal>
+          <span class="section-label"></span>
+          <h2 class="section-heading"></h2>
+          <div class="about-text"></div>
+          <div class="about-stats"></div>
+        </div>
+        <img class="about-img" src="" alt="" loading="lazy" data-reveal />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ──────────────────────────────────────────── -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-inner" data-reveal>
+        <span class="section-label"></span>
+        <h2 class="section-heading"></h2>
+        <p class="contact-subline"></p>
+        <a class="contact-email" href="mailto:hello@brndr.cz"></a>
+        <p class="contact-socials-heading">Follow us</p>
+        <ul class="contact-socials"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ───────────────────────────────────────────── -->
+  <footer id="site-footer">
+    <div class="container">
+      <p class="footer-copy"></p>
+      <ul class="footer-links"></ul>
+    </div>
+  </footer>
+
+  <!-- ── Scripts ──────────────────────────────────────────── -->
+  <!-- content.js must load before app.js (it defines SITE) -->
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/app.js"></script>
+
+</body>
+</html>
