@@ -106,8 +106,8 @@ const SITE = {
   footer: {
     copyright: `© ${new Date().getFullYear()} Brndr · Petr Obšel & Daniel Pelánek · FIT VUT Brno`,
     socials: [
-      { label: "LinkedIn · Petr Obšel",     href: "www.linkedin.com/in/petrobsel" },
-      { label: "LinkedIn · Daniel Pelánek", href: "www.linkedin.com/in/danielpelanek" },
+      { label: "LinkedIn · Petr Obšel",     href: "https://www.linkedin.com/in/petrobsel" },
+      { label: "LinkedIn · Daniel Pelánek", href: "https://www.linkedin.com/in/danielpelanek" },
       { label: "Instagram",                 href: "https://www.instagram.com/brndr.app/" },
     ],
   },
