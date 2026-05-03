@@ -38,7 +38,6 @@ const SITE = {
     links: [
       { label: "Funkce",     href: "#features" },
       { label: "O projektu", href: "#about"    },
-      { label: "Registrace", href: "#signup"   },
     ],
     cta: { label: "Zaregistrovat se", href: "https://forms.gle/placeholder", newTab: true },
   },
