@@ -14,6 +14,7 @@
     r.setProperty("--surface", c.surface);
     r.setProperty("--primary", c.primary);
     r.setProperty("--accent",  c.accent);
+    r.setProperty("--accent2", c.accent2);
     r.setProperty("--muted",   c.muted);
     r.setProperty("--border",  c.border);
   }
@@ -42,6 +43,10 @@
     const cta = nav.querySelector(".nav-cta");
     cta.textContent = n.cta.label;
     cta.href = n.cta.href;
+    if (n.cta.newTab) {
+      cta.target = "_blank";
+      cta.rel = "noopener";
+    }
   }
 
   /* ── Hero ───────────────────────────────────────────────── */
@@ -49,56 +54,33 @@
     const h = SITE.hero;
     const section = document.getElementById("hero");
 
-    section.querySelector(".hero-eyebrow").textContent   = h.eyebrow;
+    section.querySelector(".hero-eyebrow").textContent  = h.eyebrow;
     section.querySelector(".hero-headline").textContent = h.headline;
-    section.querySelector(".hero-subline").textContent   = h.subline;
+    section.querySelector(".hero-subline").textContent  = h.subline;
+
     const cta = section.querySelector(".hero-cta");
     cta.textContent = h.cta.label;
     cta.href        = h.cta.href;
-
-    if (h.backgroundImage) {
-      section.style.backgroundImage = `url('${h.backgroundImage}')`;
-      section.style.backgroundSize  = "cover";
-      section.style.backgroundPosition = "center";
+    if (h.cta.newTab) {
+      cta.target = "_blank";
+      cta.rel    = "noopener";
     }
   }
 
-  /* ── Work ───────────────────────────────────────────────── */
-  function renderWork() {
-    const w = SITE.work;
-    const section = document.getElementById("work");
+  /* ── Features ───────────────────────────────────────────── */
+  function renderFeatures() {
+    const f = SITE.features;
+    const section = document.getElementById("features");
 
-    section.querySelector(".section-label").textContent   = w.sectionLabel;
-    section.querySelector(".section-heading").textContent = w.heading;
+    section.querySelector(".section-label").textContent   = f.sectionLabel;
+    section.querySelector(".section-heading").textContent = f.heading;
 
-    const grid = section.querySelector(".work-grid");
-    grid.innerHTML = w.items.map(item => `
-      <article class="work-card">
-        <a href="${item.link}" class="work-card-inner">
-          <div class="work-card-img" style="background-image:url('${item.image}')"></div>
-          <div class="work-card-info">
-            <span class="work-card-category">${item.category}</span>
-            <h3 class="work-card-title">${item.title}</h3>
-          </div>
-        </a>
-      </article>
-    `).join("");
-  }
-
-  /* ── Services ───────────────────────────────────────────── */
-  function renderServices() {
-    const s = SITE.services;
-    const section = document.getElementById("services");
-
-    section.querySelector(".section-label").textContent   = s.sectionLabel;
-    section.querySelector(".section-heading").textContent = s.heading;
-
-    const list = section.querySelector(".services-list");
-    list.innerHTML = s.items.map(item => `
-      <div class="service-item">
-        <span class="service-icon">${item.icon}</span>
-        <h3 class="service-title">${item.title}</h3>
-        <p class="service-body">${item.body}</p>
+    const list = section.querySelector(".features-list");
+    list.innerHTML = f.items.map(item => `
+      <div class="feature-item">
+        <span class="feature-icon">${item.icon}</span>
+        <h3 class="feature-title">${item.title}</h3>
+        <p class="feature-body">${item.body}</p>
       </div>
     `).join("");
   }
@@ -123,29 +105,24 @@
         <span class="stat-label">${s.label}</span>
       </div>
     `).join("");
-
-    const img = section.querySelector(".about-img");
-    img.src = a.image;
-    img.alt = a.heading;
   }
 
-  /* ── Contact ────────────────────────────────────────────── */
-  function renderContact() {
-    const c = SITE.contact;
-    const section = document.getElementById("contact");
+  /* ── Signup ─────────────────────────────────────────────── */
+  function renderSignup() {
+    const s = SITE.signup;
+    const section = document.getElementById("signup");
 
-    section.querySelector(".section-label").textContent   = c.sectionLabel;
-    section.querySelector(".section-heading").textContent = c.heading;
-    section.querySelector(".contact-subline").textContent = c.subline;
+    section.querySelector(".section-label").textContent   = s.sectionLabel;
+    section.querySelector(".section-heading").textContent = s.heading;
+    section.querySelector(".signup-subline").textContent  = s.subline;
 
-    const emailLink = section.querySelector(".contact-email");
-    emailLink.textContent = c.email;
-    emailLink.href        = `mailto:${c.email}`;
-
-    const socialsList = section.querySelector(".contact-socials");
-    socialsList.innerHTML = c.socials
-      .map(s => `<li><a href="${s.href}" target="_blank" rel="noopener">${s.label}</a></li>`)
-      .join("");
+    const cta = section.querySelector(".signup-cta");
+    cta.textContent = s.cta.label;
+    cta.href        = s.cta.href;
+    if (s.cta.newTab) {
+      cta.target = "_blank";
+      cta.rel    = "noopener";
+    }
   }
 
   /* ── Footer ─────────────────────────────────────────────── */
@@ -155,9 +132,9 @@
 
     footer.querySelector(".footer-copy").innerHTML = f.copyright;
 
-    const linksList = footer.querySelector(".footer-links");
-    linksList.innerHTML = f.links
-      .map(l => `<li><a href="${l.href}">${l.label}</a></li>`)
+    const socialsList = footer.querySelector(".footer-socials");
+    socialsList.innerHTML = f.socials
+      .map(s => `<li><a href="${s.href}" target="_blank" rel="noopener">${s.label}</a></li>`)
       .join("");
   }
 
@@ -224,10 +201,9 @@
     applyMeta();
     renderNav();
     renderHero();
-    renderWork();
-    renderServices();
+    renderFeatures();
     renderAbout();
-    renderContact();
+    renderSignup();
     renderFooter();
     initScrollSpy();
     initMobileNav();
