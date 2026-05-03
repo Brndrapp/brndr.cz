@@ -140,6 +140,7 @@
 
   /* ── Smooth-scroll active nav link highlighting ────────── */
   function initScrollSpy() {
+    if (!("IntersectionObserver" in window)) return;
     const sections = document.querySelectorAll("section[id]");
     const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -178,6 +179,10 @@
 
   /* ── Animate elements on scroll ────────────────────────── */
   function initReveal() {
+    if (!("IntersectionObserver" in window)) {
+      document.querySelectorAll("[data-reveal]").forEach(el => el.classList.add("revealed"));
+      return;
+    }
     const els = document.querySelectorAll("[data-reveal]");
     const obs = new IntersectionObserver(
       entries => {
