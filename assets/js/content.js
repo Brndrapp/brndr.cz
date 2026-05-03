@@ -6,8 +6,8 @@
  *  Every piece of text, link, colour and image that appears on
  *  the page is defined here.  No HTML knowledge required.
  *
- *  Colours accept any valid CSS value: "#FF5733", "rgb(…)", etc.
- *  Images can be a relative path ("assets/img/hero.jpg") or any
+ *  Colours accept any valid CSS value: "#76ffcb", "rgb(…)", etc.
+ *  Images can be a relative path ("assets/images/hero.jpg") or any
  *  absolute URL.
  * ============================================================
  */
@@ -16,139 +16,99 @@ const SITE = {
 
   /* ── Meta ──────────────────────────────────────────────── */
   meta: {
-    title:       "brndr — branding that moves",
-    description: "We craft bold visual identities, websites and brand strategies for ambitious companies.",
-    lang:        "en",
+    title:       "Brndr — studentská seznamka",
+    description: "Férová studentská seznamka s ověřením identity, férovým párováním a šifrovanou komunikací.",
+    lang:        "cs",
   },
 
   /* ── Brand colours ─────────────────────────────────────── */
   colors: {
     background:  "#0d0d0d",
-    surface:     "#161616",
-    primary:     "#f0f0f0",
-    accent:      "#ff4d2e",
-    muted:       "#888888",
-    border:      "#2a2a2a",
+    surface:     "#141414",
+    primary:     "#f2f2f2",
+    accent:      "#76ffcb",
+    accent2:     "#df000e",
+    muted:       "#909090",
+    border:      "#242424",
   },
 
   /* ── Navigation ─────────────────────────────────────────── */
   nav: {
     logo: "brndr",
     links: [
-      { label: "Work",     href: "#work"     },
-      { label: "Services", href: "#services" },
-      { label: "About",    href: "#about"    },
-      { label: "Contact",  href: "#contact"  },
+      { label: "Funkce",     href: "#features" },
+      { label: "O projektu", href: "#about"    },
+      { label: "Registrace", href: "#signup"   },
     ],
-    cta: { label: "Let's talk", href: "#contact" },
+    cta: { label: "Zaregistrovat se", href: "https://forms.gle/placeholder", newTab: true },
   },
 
   /* ── Hero section ───────────────────────────────────────── */
   hero: {
-    eyebrow: "Brand studio",
-    headline: "We build brands\nthat people\nremember.",
-    subline:  "Strategy · Identity · Digital · Motion",
-    cta:      { label: "See our work", href: "#work" },
-    /* Optional background image URL — leave empty ("") to show the default
-       red radial gradient defined by #hero::before in style.css */
-    backgroundImage: "",
+    eyebrow: "Studentská seznamka · Coming soon",
+    headline: "Seznamka,\nkterá tě\nbere vážně.",
+    subline:  "Ověřená identita. Férové párování. Šifrovaná komunikace.",
+    cta:      { label: "Zaregistrovat se do mailing listu", href: "https://forms.gle/placeholder", newTab: true },
   },
 
-  /* ── Work / Portfolio section ───────────────────────────── */
-  work: {
-    sectionLabel: "Selected work",
-    heading:      "Projects we're proud of",
-    items: [
-      {
-        title:    "Novak Coffee",
-        category: "Brand Identity",
-        image:    "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80",
-        link:     "#",
-      },
-      {
-        title:    "Zetko Finance",
-        category: "Digital & Strategy",
-        image:    "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
-        link:     "#",
-      },
-      {
-        title:    "Forma Studio",
-        category: "Visual Identity",
-        image:    "https://images.unsplash.com/photo-1545239351-ef35f43d514b?w=800&q=80",
-        link:     "#",
-      },
-      {
-        title:    "Modrá Architektura",
-        category: "Brand & Web",
-        image:    "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80",
-        link:     "#",
-      },
-    ],
-  },
-
-  /* ── Services section ───────────────────────────────────── */
-  services: {
-    sectionLabel: "What we do",
-    heading:      "End-to-end brand building",
+  /* ── Features section ───────────────────────────────────── */
+  features: {
+    sectionLabel: "Co nabízíme",
+    heading:      "Seznamování tak,\njak má být.",
     items: [
       {
         icon:  "01",
-        title: "Brand Strategy",
-        body:  "Positioning, audience research, messaging frameworks and naming that give your brand a clear reason to exist.",
+        title: "Ověření studenti",
+        body:  "Přístup pouze pro ověřené studenty přes školní e-mail. Žádné falešné profily ani anonymní účty bez záruky.",
       },
       {
         icon:  "02",
-        title: "Visual Identity",
-        body:  "Logo systems, typography, colour palettes and brand guidelines that travel beautifully across every touchpoint.",
+        title: "Férové párování",
+        body:  "Žádné skryté škálování popularity. Transparentní algoritmus, který nezamyká lidi do kategorií.",
       },
       {
         icon:  "03",
-        title: "Digital Design",
-        body:  "Web design, UI/UX and interactive experiences that convert visitors into customers.",
+        title: "E2EE šifrování",
+        body:  "End-to-end šifrování zpráv se samostatnou správou klíčů. Obsah komunikace zůstává jen mezi vámi.",
       },
       {
         icon:  "04",
-        title: "Motion & Video",
-        body:  "Animated identities, social content and brand films that bring your story to life.",
+        title: "Reálná setkání",
+        body:  "Speed-dating akce a tematické meetupy. Pomáháme domluvit setkání — ne ho nahrazovat nekonečným swipováním.",
       },
     ],
   },
 
   /* ── About section ──────────────────────────────────────── */
   about: {
-    sectionLabel: "About us",
-    heading:      "A small studio with big ambitions",
+    sectionLabel: "O projektu",
+    heading:      "Proč Brndr?",
     paragraphs: [
-      "brndr is a Prague-based brand studio founded on the belief that great design changes how the world sees a company — and how a company sees itself.",
-      "We work with startups, scale-ups and established businesses who are ready to invest in identity that lasts.",
+      "Běžné seznamovací platformy jsou optimalizované na zisk, ne na reálné seznamování. Místo podpory smysluplného kontaktu posilují povrchní metriky popularity a uzavírají uživatele do kategorií, ze kterých se prakticky nelze vymanit.",
+      "Brndr vznikl jako reakce na tuto realitu. Jsme studentský projekt z FIT VUT v Brně s cílem přinést férovější, bezpečnější a autentičtější způsob, jak se seznámit.",
     ],
     stats: [
-      { value: "8+",  label: "Years of experience" },
-      { value: "120", label: "Brands built"        },
-      { value: "18",  label: "Countries reached"   },
+      { value: "PWA",  label: "Dostupné přes odkaz" },
+      { value: "E2EE", label: "Šifrovaná komunikace" },
+      { value: "FIT",  label: "VUT v Brně" },
     ],
-    image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=900&q=80",
   },
 
-  /* ── Contact section ────────────────────────────────────── */
-  contact: {
-    sectionLabel: "Get in touch",
-    heading:      "Ready to start something?",
-    subline:      "Tell us about your project. We'll get back to you within one business day.",
-    email:        "hello@brndr.cz",
-    socials: [
-      { label: "Instagram", href: "https://instagram.com/" },
-      { label: "LinkedIn",  href: "https://linkedin.com/"  },
-      { label: "Behance",   href: "https://behance.net/"   },
-    ],
+  /* ── Signup / Mailing list section ─────────────────────── */
+  signup: {
+    sectionLabel: "Buď první",
+    heading:      "Zaregistruj se\ndo mailing listu.",
+    subline:      "Jako první se dozvíš o spuštění, beta testování a dalším vývoji platformy.",
+    cta:          { label: "Zaregistrovat se →", href: "https://forms.gle/placeholder", newTab: true },
   },
 
   /* ── Footer ─────────────────────────────────────────────── */
   footer: {
-    copyright: `© ${new Date().getFullYear()} brndr s.r.o. — Prague, Czech Republic`,
-    links: [
-      { label: "Privacy Policy", href: "#" },
-      { label: "Cookies",        href: "#" },
+    copyright: `© ${new Date().getFullYear()} Brndr — Brno, Czech Republic`,
+    socials: [
+      { label: "LinkedIn · Petr Obšel",     href: "#" },
+      { label: "LinkedIn · Daniel Pelánek", href: "#" },
+      { label: "Instagram",                 href: "#" },
     ],
   },
 

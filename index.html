@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="We craft bold visual identities, websites and brand strategies for ambitious companies." />
+  <meta name="description" content="Férová studentská seznamka s ověřením identity, férovým párováním a šifrovanou komunikací." />
 
   <!-- Favicon (simple SVG letter mark) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23ff4d2e'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='800' font-size='18' fill='white'>b</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2376ffcb'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='800' font-size='18' fill='%230d0d0d'>b</text></svg>" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,12 +21,12 @@
 <body>
 
   <!-- ── Navigation ───────────────────────────────────────── -->
-  <nav id="site-nav" role="navigation" aria-label="Main navigation">
+  <nav id="site-nav" role="navigation" aria-label="Hlavní navigace">
     <div class="container">
       <a href="#hero" class="nav-logo">brndr</a>
       <ul class="nav-links"></ul>
-      <a href="#contact" class="nav-cta">Let's talk</a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <a href="#signup" class="nav-cta">Zaregistrovat se</a>
+      <button class="nav-toggle" aria-label="Otevřít menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -39,54 +39,40 @@
         <span class="hero-eyebrow"></span>
         <h1 class="hero-headline"></h1>
         <p class="hero-subline"></p>
-        <a href="#work" class="hero-cta"></a>
+        <a class="hero-cta" target="_blank" rel="noopener"></a>
       </div>
     </div>
   </section>
 
-  <!-- ── Work ─────────────────────────────────────────────── -->
-  <section id="work">
+  <!-- ── Features ─────────────────────────────────────────── -->
+  <section id="features">
     <div class="container">
       <span class="section-label" data-reveal></span>
       <h2 class="section-heading" data-reveal></h2>
-      <div class="work-grid" data-reveal></div>
-    </div>
-  </section>
-
-  <!-- ── Services ─────────────────────────────────────────── -->
-  <section id="services">
-    <div class="container">
-      <span class="section-label" data-reveal></span>
-      <h2 class="section-heading" data-reveal></h2>
-      <div class="services-list" data-reveal></div>
+      <div class="features-list" data-reveal></div>
     </div>
   </section>
 
   <!-- ── About ────────────────────────────────────────────── -->
   <section id="about">
     <div class="container">
-      <div class="about-inner">
-        <div data-reveal>
-          <span class="section-label"></span>
-          <h2 class="section-heading"></h2>
-          <div class="about-text"></div>
-          <div class="about-stats"></div>
-        </div>
-        <img class="about-img" src="" alt="" loading="lazy" data-reveal />
+      <div class="about-inner" data-reveal>
+        <span class="section-label"></span>
+        <h2 class="section-heading"></h2>
+        <div class="about-text"></div>
+        <div class="about-stats"></div>
       </div>
     </div>
   </section>
 
-  <!-- ── Contact ──────────────────────────────────────────── -->
-  <section id="contact">
+  <!-- ── Signup ───────────────────────────────────────────── -->
+  <section id="signup">
     <div class="container">
-      <div class="contact-inner" data-reveal>
+      <div class="signup-inner" data-reveal>
         <span class="section-label"></span>
         <h2 class="section-heading"></h2>
-        <p class="contact-subline"></p>
-        <a class="contact-email" href="mailto:hello@brndr.cz"></a>
-        <p class="contact-socials-heading">Follow us</p>
-        <ul class="contact-socials"></ul>
+        <p class="signup-subline"></p>
+        <a class="signup-cta" target="_blank" rel="noopener"></a>
       </div>
     </div>
   </section>
@@ -95,7 +81,7 @@
   <footer id="site-footer">
     <div class="container">
       <p class="footer-copy"></p>
-      <ul class="footer-links"></ul>
+      <ul class="footer-socials"></ul>
     </div>
   </footer>
 
