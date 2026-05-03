@@ -31,6 +31,7 @@
   function renderNav() {
     const n = SITE.nav;
     const nav = document.getElementById("site-nav");
+    if (!nav) return;
 
     const logo = nav.querySelector(".nav-logo");
     logo.textContent = n.logo;
@@ -53,6 +54,7 @@
   function renderHero() {
     const h = SITE.hero;
     const section = document.getElementById("hero");
+    if (!section) return;
 
     section.querySelector(".hero-eyebrow").textContent  = h.eyebrow;
     section.querySelector(".hero-headline").textContent = h.headline;
@@ -71,6 +73,7 @@
   function renderFeatures() {
     const f = SITE.features;
     const section = document.getElementById("features");
+    if (!section) return;
 
     section.querySelector(".section-label").textContent   = f.sectionLabel;
     section.querySelector(".section-heading").textContent = f.heading;
@@ -89,6 +92,7 @@
   function renderAbout() {
     const a = SITE.about;
     const section = document.getElementById("about");
+    if (!section) return;
 
     section.querySelector(".section-label").textContent   = a.sectionLabel;
     section.querySelector(".section-heading").textContent = a.heading;
@@ -111,6 +115,7 @@
   function renderSignup() {
     const s = SITE.signup;
     const section = document.getElementById("signup");
+    if (!section) return;
 
     section.querySelector(".section-label").textContent   = s.sectionLabel;
     section.querySelector(".section-heading").textContent = s.heading;
@@ -129,6 +134,7 @@
   function renderFooter() {
     const f = SITE.footer;
     const footer = document.getElementById("site-footer");
+    if (!footer) return;
 
     footer.querySelector(".footer-copy").innerHTML = f.copyright;
 
@@ -164,6 +170,7 @@
   function initMobileNav() {
     const toggle = document.querySelector(".nav-toggle");
     const menu   = document.querySelector(".nav-links");
+    if (!toggle || !menu) return;
     toggle.addEventListener("click", () => {
       const open = menu.classList.toggle("open");
       toggle.setAttribute("aria-expanded", open);
