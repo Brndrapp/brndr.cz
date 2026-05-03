@@ -39,7 +39,7 @@ const SITE = {
       { label: "Funkce",     href: "#features" },
       { label: "O projektu", href: "#about"    },
     ],
-    cta: { label: "Zaregistrovat se", href: "https://forms.gle/placeholder", newTab: true },
+    cta: { label: "Zaregistrovat se", href: "https://forms.gle/Jm5bFFcwMj9VBEK36", newTab: true },
   },
 
   /* ── Hero section ───────────────────────────────────────── */
@@ -47,7 +47,7 @@ const SITE = {
     eyebrow: "Studentský projekt · FIT VUT Brno",
     headline: "Seznamka,\nkterá tě\nbere vážně.",
     subline:  "Ověřená identita. Férové párování. Šifrovaná komunikace.",
-    cta:      { label: "Zaregistrovat se do mailing listu", href: "https://forms.gle/placeholder", newTab: true },
+    cta:      { label: "Zaregistrovat se do mailing listu", href: "https://forms.gle/Jm5bFFcwMj9VBEK36", newTab: true },
   },
 
   /* ── Features section ───────────────────────────────────── */
@@ -99,7 +99,7 @@ const SITE = {
     sectionLabel: "Buď první",
     heading:      "Zaregistruj se\ndo mailing listu.",
     subline:      "Jako první se dozvíš o spuštění, beta testování a dalším vývoji platformy.",
-    cta:          { label: "Zaregistrovat se →", href: "https://forms.gle/placeholder", newTab: true },
+    cta:          { label: "Zaregistrovat se →", href: "https://forms.gle/Jm5bFFcwMj9VBEK36", newTab: true },
   },
 
   /* ── Footer ─────────────────────────────────────────────── */
