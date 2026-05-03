@@ -45,7 +45,7 @@ const SITE = {
 
   /* ── Hero section ───────────────────────────────────────── */
   hero: {
-    eyebrow: "Studentská seznamka · Coming soon",
+    eyebrow: "Studentský projekt · FIT VUT Brno",
     headline: "Seznamka,\nkterá tě\nbere vážně.",
     subline:  "Ověřená identita. Férové párování. Šifrovaná komunikace.",
     cta:      { label: "Zaregistrovat se do mailing listu", href: "https://forms.gle/placeholder", newTab: true },
@@ -58,23 +58,23 @@ const SITE = {
     items: [
       {
         icon:  "01",
-        title: "Ověření studenti",
-        body:  "Přístup pouze pro ověřené studenty přes školní e-mail. Žádné falešné profily ani anonymní účty bez záruky.",
+        title: "Ověřená identita",
+        body:  "Přístup pouze pro ověřené studenty přes školní e-mail. Volitelné ověření přes fotografii z průkazu ISIC eliminuje falešné profily.",
       },
       {
         icon:  "02",
         title: "Férové párování",
-        body:  "Žádné skryté škálování popularity. Transparentní algoritmus, který nezamyká lidi do kategorií.",
+        body:  "Žádné skryté škálování popularity ani algoritmická manipulace. Transparentní systém, který nikoho nezamyká do kategorií.",
       },
       {
         icon:  "03",
-        title: "E2EE šifrování",
-        body:  "End-to-end šifrování zpráv se samostatnou správou klíčů. Obsah komunikace zůstává jen mezi vámi.",
+        title: "E2EE komunikace",
+        body:  "End-to-end šifrování zpráv s oddělenou správou klíčů. Obsah komunikace není čitelný na straně serveru — zůstává jen mezi vámi.",
       },
       {
         icon:  "04",
         title: "Reálná setkání",
-        body:  "Speed-dating akce a tematické meetupy. Pomáháme domluvit setkání — ne ho nahrazovat nekonečným swipováním.",
+        body:  "Speed-dating akce a tematické meetupy. Pomáháme setkání domluvit a zorganizovat — ne ho nahrazovat nekonečným swipováním.",
       },
     ],
   },
@@ -84,13 +84,14 @@ const SITE = {
     sectionLabel: "O projektu",
     heading:      "Proč Brndr?",
     paragraphs: [
-      "Běžné seznamovací platformy jsou optimalizované na zisk, ne na reálné seznamování. Místo podpory smysluplného kontaktu posilují povrchní metriky popularity a uzavírají uživatele do kategorií, ze kterých se prakticky nelze vymanit.",
-      "Brndr vznikl jako reakce na tuto realitu. Jsme studentský projekt z FIT VUT v Brně s cílem přinést férovější, bezpečnější a autentičtější způsob, jak se seznámit.",
+      "Běžné seznamovací platformy jsou optimalizované na zisk, ne na reálné seznamování. Místo podpory smysluplného kontaktu posilují povrchní metriky popularity a dlouhodobě uzavírají uživatele do kategorií, ze kterých se prakticky nelze vymanit.",
+      "Brndr je studentský projekt z Fakulty informačních technologií VUT v Brně. Navrhujeme ho jako konkurenceschopnou studentskou seznamku, která umožní přístup pouze ověřeným studentům, omezí prostor pro falešné profily a online prostředí doplní o reálná setkání.",
+      "Výsledkem je návrh a prototyp PWA aplikace s důrazem na nativní uživatelskou zkušenost, bezpečnou komunikaci s end-to-end šifrováním a férovým párováním bez skrytých algoritmů.",
     ],
     stats: [
-      { value: "PWA",  label: "Dostupné přes odkaz" },
-      { value: "E2EE", label: "Šifrovaná komunikace" },
-      { value: "FIT",  label: "VUT v Brně" },
+      { value: "PWA",     label: "Dostupné přes odkaz" },
+      { value: "E2EE",    label: "Šifrovaná komunikace" },
+      { value: "FIT VUT", label: "Brno" },
     ],
   },
 
@@ -104,7 +105,7 @@ const SITE = {
 
   /* ── Footer ─────────────────────────────────────────────── */
   footer: {
-    copyright: `© ${new Date().getFullYear()} Brndr — Brno, Czech Republic`,
+    copyright: `© ${new Date().getFullYear()} Brndr · Petr Obšel & Daniel Pelánek · FIT VUT Brno`,
     socials: [
       { label: "LinkedIn · Petr Obšel",     href: "#" },
       { label: "LinkedIn · Daniel Pelánek", href: "#" },

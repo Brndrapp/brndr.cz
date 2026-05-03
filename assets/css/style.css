@@ -155,7 +155,7 @@ ul {
   padding: 0.55rem 1.25rem;
   border-radius: 999px;
   background: var(--accent);
-  color: #fff !important;
+  color: var(--bg);
   font-size: 0.875rem;
   font-weight: 600;
   transition: opacity 0.2s, transform 0.2s;
