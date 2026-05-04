@@ -220,16 +220,21 @@ ul {
   .nav-cta {
     display: none;
   }
+
+  #hero {
+    align-items: flex-start;
+  }
 }
 
 /* ── Hero ─────────────────────────────────────────────────── */
 #hero {
   min-height: 100vh;
+  min-height: 100svh; /* small viewport height: accounts for mobile browser UI chrome */
   display: flex;
   align-items: center;
   padding-top: var(--nav-h);
   position: relative;
-  overflow: hidden;
+  overflow-x: clip; /* prevent horizontal overflow; do not clip vertical content */
 }
 
 #hero::before {
