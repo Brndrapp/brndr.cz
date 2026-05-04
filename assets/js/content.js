@@ -110,7 +110,7 @@ const SITE = {
       { label: "LinkedIn · Petr Obšel",     href: "https://www.linkedin.com/in/petrobsel" },
       { label: "LinkedIn · Daniel Pelánek", href: "https://www.linkedin.com/in/danielpelanek" },
       { label: "Instagram",                 href: "https://www.instagram.com/brndr.app/" },
-      { label: "E-mail: info@brndr.cz",             href: "mailto:info@brndr.cz" },
+      { label: "E-mail: info@brndr.cz",     href: "mailto:info@brndr.cz" },
     ],
   },
 
