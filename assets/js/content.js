@@ -48,6 +48,7 @@ const SITE = {
     headline: "Seznamka,\nkterá tě\nbere vážně.",
     subline:  "Ověřená identita. Férové párování. Šifrovaná komunikace.",
     cta:      { label: "Zaregistrovat se do mailing listu", href: "https://forms.gle/Jm5bFFcwMj9VBEK36", newTab: true },
+    demoCta:  { label: "Vyzkoušet demo →", href: "https://demo.brndr.cz", newTab: true },
   },
 
   /* ── Features section ───────────────────────────────────── */

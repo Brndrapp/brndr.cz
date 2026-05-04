@@ -67,6 +67,14 @@
       cta.target = "_blank";
       cta.rel    = "noopener";
     }
+
+    const demoCta = section.querySelector(".hero-demo-cta");
+    demoCta.textContent = h.demoCta.label;
+    demoCta.href        = h.demoCta.href;
+    if (h.demoCta.newTab) {
+      demoCta.target = "_blank";
+      demoCta.rel    = "noopener";
+    }
   }
 
   /* ── Features ───────────────────────────────────────────── */
