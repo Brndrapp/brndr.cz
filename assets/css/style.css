@@ -310,6 +310,38 @@ ul {
   transform: translateY(-2px);
 }
 
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-demo-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.875rem 2rem;
+  border-radius: 999px;
+  background: var(--accent2);
+  color: var(--primary);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.hero-demo-cta:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+
+.hero-logo-img {
+  width: clamp(64px, 12vw, 120px);
+  height: auto;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+}
+
 /* ── Section base ─────────────────────────────────────────── */
 section {
   padding-block: clamp(4rem, 8vw, 7rem);
