@@ -178,18 +178,24 @@
   function initMobileNav() {
     const toggle = document.querySelector(".nav-toggle");
     const menu   = document.querySelector(".nav-links");
+    const cta    = document.querySelector(".nav-cta");
     if (!toggle || !menu) return;
+
+    const close = () => {
+      menu.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    };
+
     toggle.addEventListener("click", () => {
       const open = menu.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", open);
+      toggle.setAttribute("aria-expanded", String(open));
     });
-    // close on link click
-    menu.querySelectorAll("a").forEach(a =>
-      a.addEventListener("click", () => {
-        menu.classList.remove("open");
-        toggle.setAttribute("aria-expanded", false);
-      })
-    );
+    // close on any menu link, the CTA, or Escape
+    menu.querySelectorAll("a").forEach(a => a.addEventListener("click", close));
+    if (cta) cta.addEventListener("click", close);
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape") close();
+    });
   }
 
   /* ── Animate elements on scroll ────────────────────────── */
