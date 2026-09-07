@@ -34,7 +34,7 @@ const SITE = {
 
   /* ── Navigation ─────────────────────────────────────────── */
   nav: {
-    logo: "brndr",
+    logo: "BRNDR",
     links: [
       { label: "Funkce",     href: "#features" },
       { label: "O projektu", href: "#about"    },
@@ -47,8 +47,8 @@ const SITE = {
     eyebrow: "Studentský projekt · FIT VUT Brno",
     headline: "Seznamka,\nkterá tě\nbere vážně.",
     subline:  "Ověřená identita. Férové párování. Šifrovaná komunikace.",
-    cta:      { label: "Zaregistrovat se do mailing listu", href: "https://forms.gle/Jm5bFFcwMj9VBEK36", newTab: true },
-    demoCta:  { label: "Vyzkoušet demo →", href: "https://brndr-app.lovable.app", newTab: true },
+    cta:      { label: "Poznej VUT (zatím)", href: "https://app.brndr.cz", newTab: true },
+    demoCta:  { label: "Přidej se k mailing listu", href: "https://forms.gle/Jm5bFFcwMj9VBEK36", newTab: true },
   },
 
   /* ── Features section ───────────────────────────────────── */
